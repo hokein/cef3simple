@@ -15,7 +15,7 @@ g++ *.o \
   $1/out/Release/obj.target/libcef_dll_wrapper.a \
   -o cef3simple \
   `pkg-config --cflags gtk+-2.0` \
-  -L /home/linux/Downloads/cef_binary_3_1650_1562_linux64/Release \
+  -L $1/Release \
   -ldl \
   -lcef \
 
