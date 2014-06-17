@@ -18,6 +18,7 @@ g++ *.o \
   -L $1/Release \
   -ldl \
   -lcef \
+  -Wl,-rpath=$1/Release
 
 echo "Copying cef resources"
 rm *.o

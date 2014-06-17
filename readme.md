@@ -10,15 +10,7 @@ CEF version 3.1650.1562
 
 1. Build source code: `./build-linux.sh <your_cef3_path>`
 
-2. Setting library path.
-
-```
-cd build
-LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):<cef3simple_dir>/build
-export LD_LIBRARY_PATH
-```
-
-3. Launch cef3simple: `./cef3simple`
+2. Launch cef3simple: `./cef3simple`
 
 **Notes**
 
