@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7642015E195034B600E64241 /* process_helper_mac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76FAED2919502F6300DE217B /* process_helper_mac.cpp */; };
+		7642015F19503CDD00E64241 /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FAECEE194F188F00DE217B /* libcef_dll_wrapper.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		7642016619505DE000E64241 /* cef3simple Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76FAECF4194F33C200DE217B /* cef3simple Helper.app */; };
+		76FAECAA194F0A6A00DE217B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FAECA9194F0A6A00DE217B /* Cocoa.framework */; };
+		76FAECED194F17E900DE217B /* Chromium Embedded Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FAECEC194F17E900DE217B /* Chromium Embedded Framework.framework */; };
+		76FAECEF194F188F00DE217B /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FAECEE194F188F00DE217B /* libcef_dll_wrapper.a */; };
+		76FAED23195028A800DE217B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FAECAC194F0A6A00DE217B /* AppKit.framework */; };
+		76FAED24195028CD00DE217B /* Chromium Embedded Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FAECEC194F17E900DE217B /* Chromium Embedded Framework.framework */; };
+		76FAED3019502F6300DE217B /* cefsimple_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 76FAED2719502F6300DE217B /* cefsimple_mac.mm */; };
+		76FAED3319502F6300DE217B /* simple_app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76FAED2A19502F6300DE217B /* simple_app.cpp */; };
+		76FAED3419502F6300DE217B /* simple_handler_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 76FAED2C19502F6300DE217B /* simple_handler_mac.mm */; };
+		76FAED3519502F6300DE217B /* simple_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76FAED2D19502F6300DE217B /* simple_handler.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7642016319505D8B00E64241 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76FAEC9E194F0A6A00DE217B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76FAECF3194F33C200DE217B;
+			remoteInfo = cef3simple_helper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7642016519505DA300E64241 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = cef3simple.app/Contents/Frameworks;
+			dstSubfolderSpec = 16;
+			files = (
+				7642016619505DE000E64241 /* cef3simple Helper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		76FAECA6194F0A6A00DE217B /* cef3simple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cef3simple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76FAECA9194F0A6A00DE217B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		76FAECAC194F0A6A00DE217B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		76FAECAD194F0A6A00DE217B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		76FAECAE194F0A6A00DE217B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		76FAECEC194F17E900DE217B /* Chromium Embedded Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Chromium Embedded Framework.framework"; path = "../../../Downloads/cef-release/cef_binary_3.1750.1738_macosx32/Debug/Chromium Embedded Framework.framework"; sourceTree = "<group>"; };
+		76FAECEE194F188F00DE217B /* libcef_dll_wrapper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcef_dll_wrapper.a; path = "../../../Downloads/cef-release/cef_binary_3.1750.1738_macosx32/xcodebuild/Debug/libcef_dll_wrapper.a"; sourceTree = "<group>"; };
+		76FAECF4194F33C200DE217B /* cef3simple Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cef3simple Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76FAED2719502F6300DE217B /* cefsimple_mac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = cefsimple_mac.mm; path = src/cefsimple_mac.mm; sourceTree = SOURCE_ROOT; };
+		76FAED2819502F6300DE217B /* mac */ = {isa = PBXFileReference; lastKnownFileType = folder; name = mac; path = src/mac; sourceTree = SOURCE_ROOT; };
+		76FAED2919502F6300DE217B /* process_helper_mac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = process_helper_mac.cpp; path = src/process_helper_mac.cpp; sourceTree = SOURCE_ROOT; };
+		76FAED2A19502F6300DE217B /* simple_app.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = simple_app.cpp; path = src/simple_app.cpp; sourceTree = SOURCE_ROOT; };
+		76FAED2B19502F6300DE217B /* simple_app.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simple_app.h; path = src/simple_app.h; sourceTree = SOURCE_ROOT; };
+		76FAED2C19502F6300DE217B /* simple_handler_mac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = simple_handler_mac.mm; path = src/simple_handler_mac.mm; sourceTree = SOURCE_ROOT; };
+		76FAED2D19502F6300DE217B /* simple_handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = simple_handler.cpp; path = src/simple_handler.cpp; sourceTree = SOURCE_ROOT; };
+		76FAED2E19502F6300DE217B /* simple_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simple_handler.h; path = src/simple_handler.h; sourceTree = SOURCE_ROOT; };
+		76FAED2F19502F6300DE217B /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = src/util.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76FAECA3194F0A6A00DE217B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FAECEF194F188F00DE217B /* libcef_dll_wrapper.a in Frameworks */,
+				76FAECED194F17E900DE217B /* Chromium Embedded Framework.framework in Frameworks */,
+				76FAECAA194F0A6A00DE217B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76FAECF1194F33C200DE217B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7642015F19503CDD00E64241 /* libcef_dll_wrapper.a in Frameworks */,
+				76FAED24195028CD00DE217B /* Chromium Embedded Framework.framework in Frameworks */,
+				76FAED23195028A800DE217B /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76FAEC9D194F0A6A00DE217B = {
+			isa = PBXGroup;
+			children = (
+				76FAECAF194F0A6A00DE217B /* cef3simple */,
+				76FAECA8194F0A6A00DE217B /* Frameworks */,
+				76FAECA7194F0A6A00DE217B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76FAECA7194F0A6A00DE217B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76FAECA6194F0A6A00DE217B /* cef3simple.app */,
+				76FAECF4194F33C200DE217B /* cef3simple Helper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76FAECA8194F0A6A00DE217B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76FAECEE194F188F00DE217B /* libcef_dll_wrapper.a */,
+				76FAECEC194F17E900DE217B /* Chromium Embedded Framework.framework */,
+				76FAECA9194F0A6A00DE217B /* Cocoa.framework */,
+				76FAECAB194F0A6A00DE217B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76FAECAB194F0A6A00DE217B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76FAECAC194F0A6A00DE217B /* AppKit.framework */,
+				76FAECAD194F0A6A00DE217B /* CoreData.framework */,
+				76FAECAE194F0A6A00DE217B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		76FAECAF194F0A6A00DE217B /* cef3simple */ = {
+			isa = PBXGroup;
+			children = (
+				76FAED2719502F6300DE217B /* cefsimple_mac.mm */,
+				76FAED2819502F6300DE217B /* mac */,
+				76FAED2919502F6300DE217B /* process_helper_mac.cpp */,
+				76FAED2A19502F6300DE217B /* simple_app.cpp */,
+				76FAED2B19502F6300DE217B /* simple_app.h */,
+				76FAED2C19502F6300DE217B /* simple_handler_mac.mm */,
+				76FAED2D19502F6300DE217B /* simple_handler.cpp */,
+				76FAED2E19502F6300DE217B /* simple_handler.h */,
+				76FAED2F19502F6300DE217B /* util.h */,
+			);
+			path = cef3simple;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76FAECA5194F0A6A00DE217B /* cef3simple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76FAECD7194F0A6B00DE217B /* Build configuration list for PBXNativeTarget "cef3simple" */;
+			buildPhases = (
+				7642016519505DA300E64241 /* CopyFiles */,
+				76FAECA2194F0A6A00DE217B /* Sources */,
+				76FAECA3194F0A6A00DE217B /* Frameworks */,
+				764201611950594E00E64241 /* copy framework */,
+				7642016219505AA500E64241 /* Fix link */,
+				7642016819505F7100E64241 /* make more helpers */,
+				764201691950602F00E64241 /* change mach-o flags */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7642016419505D8B00E64241 /* PBXTargetDependency */,
+			);
+			name = cef3simple;
+			productName = cef3simple;
+			productReference = 76FAECA6194F0A6A00DE217B /* cef3simple.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76FAECF3194F33C200DE217B /* cef3simple_helper_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76FAED1B194F33C200DE217B /* Build configuration list for PBXNativeTarget "cef3simple_helper_app" */;
+			buildPhases = (
+				76FAECF0194F33C200DE217B /* Sources */,
+				76FAECF1194F33C200DE217B /* Frameworks */,
+				764201601950535600E64241 /* Fix framework_link */,
+				7642016719505F2D00E64241 /* change mach-O flags */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cef3simple_helper_app;
+			productName = cef3simple_helper;
+			productReference = 76FAECF4194F33C200DE217B /* cef3simple Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76FAEC9E194F0A6A00DE217B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+			};
+			buildConfigurationList = 76FAECA1194F0A6A00DE217B /* Build configuration list for PBXProject "cef3simple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76FAEC9D194F0A6A00DE217B;
+			productRefGroup = 76FAECA7194F0A6A00DE217B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76FAECA5194F0A6A00DE217B /* cef3simple */,
+				76FAECF3194F33C200DE217B /* cef3simple_helper_app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		764201601950535600E64241 /* Fix framework_link */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fix framework_link";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "exec install_name_tool -change \"@executable_path/Chromium Embedded Framework\" \"@executable_path/../../../../Frameworks/Chromium Embedded Framework.framework/Chromium Embedded Framework\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nexit 1";
+			showEnvVarsInLog = 0;
+		};
+		764201611950594E00E64241 /* copy framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = "copy framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "exec cp -Rf \"cef/${CONFIGURATION}/Chromium Embedded Framework.framework\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Frameworks/\"\nexit 1\n";
+			showEnvVarsInLog = 0;
+		};
+		7642016219505AA500E64241 /* Fix link */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = "Fix link";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "exec install_name_tool -change \"@executable_path/Chromium Embedded Framework\" \"@executable_path/../Frameworks/Chromium Embedded Framework.framework/Chromium Embedded Framework\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nexit 1\n";
+			showEnvVarsInLog = 0;
+		};
+		7642016719505F2D00E64241 /* change mach-O flags */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = "change mach-O flags";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "exec cef/tools/change_mach_o_flags_from_xcode.sh\nexit 1";
+			showEnvVarsInLog = 0;
+		};
+		7642016819505F7100E64241 /* make more helpers */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = "make more helpers";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "exec cef/tools/make_more_helpers.sh Frameworks cef3simple\nexit 1\n";
+			showEnvVarsInLog = 0;
+		};
+		764201691950602F00E64241 /* change mach-o flags */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = "change mach-o flags";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "exec cef/tools/change_mach_o_flags_from_xcode.sh\nexit 1\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76FAECA2194F0A6A00DE217B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FAED3419502F6300DE217B /* simple_handler_mac.mm in Sources */,
+				76FAED3319502F6300DE217B /* simple_app.cpp in Sources */,
+				76FAED3019502F6300DE217B /* cefsimple_mac.mm in Sources */,
+				76FAED3519502F6300DE217B /* simple_handler.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76FAECF0194F33C200DE217B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7642015E195034B600E64241 /* process_helper_mac.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7642016419505D8B00E64241 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76FAECF3194F33C200DE217B /* cef3simple_helper_app */;
+			targetProxy = 7642016319505D8B00E64241 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		76FAECD5194F0A6B00DE217B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/hokein/Downloads/cef-release/cef_binary_3.1750.1738_macosx32/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		76FAECD6194F0A6B00DE217B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/hokein/Downloads/cef-release/cef_binary_3.1750.1738_macosx32/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		76FAECD8194F0A6B00DE217B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = cef/Debug;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					cef,
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = src/mac/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					cef/xcodebuild/Debug,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		76FAECD9194F0A6B00DE217B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = cef/Release;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					cef/,
+				);
+				INFOPLIST_FILE = src/mac/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					cef/xcodebuild/Release,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		76FAED1C194F33C200DE217B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					cef/Debug,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					cef/,
+				);
+				INFOPLIST_FILE = "src/mac/helper-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					cef/xcodebuild/Debug,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "cef3simple Helper";
+				SDKROOT = macosx10.8;
+				SYMROOT = build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		76FAED1D194F33C200DE217B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					cef/Release,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					cef/,
+				);
+				INFOPLIST_FILE = "src/mac/helper-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					cef/xcodebuild/Release,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "cef3simple Helper";
+				SDKROOT = macosx10.8;
+				SYMROOT = build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76FAECA1194F0A6A00DE217B /* Build configuration list for PBXProject "cef3simple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76FAECD5194F0A6B00DE217B /* Debug */,
+				76FAECD6194F0A6B00DE217B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76FAECD7194F0A6B00DE217B /* Build configuration list for PBXNativeTarget "cef3simple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76FAECD8194F0A6B00DE217B /* Debug */,
+				76FAECD9194F0A6B00DE217B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76FAED1B194F33C200DE217B /* Build configuration list for PBXNativeTarget "cef3simple_helper_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76FAED1C194F33C200DE217B /* Debug */,
+				76FAED1D194F33C200DE217B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76FAEC9E194F0A6A00DE217B /* Project object */;
+}
