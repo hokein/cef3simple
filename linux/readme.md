@@ -1,7 +1,3 @@
-# cef3simple
-
-A minimal simple sample of CEF3 on Linux.
-
 ## Requirement
 
 CEF version 3.1650.1562
