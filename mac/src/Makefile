@@ -44,7 +44,7 @@ cef3simple_APP: Helper_APP
 	
 	install_name_tool -change "@executable_path/Chromium Embedded Framework" "@executable_path/../Frameworks/Chromium Embedded Framework.framework/Chromium Embedded Framework" "$(shell pwd)/$(CEFSIMPLE_EXECUTABLE_PATH)"
 	
-	../cef/tools/make_more_helpers.sh "$(shell pwd)/$(CEFSIMPLE_APP).app/Contents/Frameworks" cef3simple 
+	../tools/make_more_helpers.sh "$(shell pwd)/$(CEFSIMPLE_APP).app/Contents/Frameworks" cef3simple 
 	#../cef/tools/change_mach_o_flags_from_xcode.sh $(shell pwd)/$(CEFSIMPLE_EXECUTABLE_PATH)
 
 clean:
