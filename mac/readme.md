@@ -9,7 +9,8 @@
 
 2. Copy the whole CEF3 directory to `<cef3simple_dir>/mac/cef`.
 
-3. Open `cef3simple` xcode project file and build in Xcode.
+3. Open `cef3simple` xcode project file and build in Xcode or run `make`.
+
 
 
 [1]: http://www.magpcss.net/cef_downloads/index.php?file=cef_binary_3.1750.1738_macosx32.7z 
